@@ -19,11 +19,11 @@ document.onkeyup = function(event) {
         guessesLeft=9;
         document.querySelector('#guessesLeft').innerHTML = "Guesses Left: " + guessesLeft;
     }else{
-        audio.play();
         guessesLeft--;
         document.querySelector('#guessesLeft').innerHTML = "Guesses Left: " + guessesLeft;
         if (guessesLeft == 0) {
             var audio = new Audio('assets/sounds/lose.mp3');
+            audio.play();
             losses++; 
             document.querySelector('#losses').innerHTML = "Losses: " + losses; 
             document.querySelector('#userGuesses').innerHTML = "User Guesses: ";
