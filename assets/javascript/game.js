@@ -28,6 +28,7 @@ document.onkeyup = function(event) {
             document.querySelector('#losses').innerHTML = "Losses: " + losses; 
             document.querySelector('#userGuesses').innerHTML = "User Guesses: ";
             guessesLeft=9;
+            document.querySelector('#guessesLeft').innerHTML = "Guesses Left: " + guessesLeft;
             userGuesses = []
             computerGuess = listOfLetters[Math.floor(Math.random() * listOfLetters.length)];
         }
